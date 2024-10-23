@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram واجهة شبيهة بـ</title>
+    <style>
+        /* إعدادات عامة */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #fafafa;
+            color: #333;
+        }
+
+        /* شريط التنقل العلوي */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #dbdbdb;
+        }
+
+        .logo h1 {
+            font-family: 'Instagram Sans', sans-serif;
+            font-weight: bold;
+            color: #262626;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #262626;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        nav ul li a:hover {
+            color: #0095f6;
+        }
+
+        .login-btn {
+            background-color: #0095f6;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 5px;
+        }
+
+        .login-btn:hover {
+            background-color: #007bb5;
+        }
+
+        /* شبكة الصور */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 10px;
+            padding: 20px;
+        }
+
+        .photo img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #dbdbdb;
+        }
+
+        /* نافذة تسجيل الدخول */
+        .login-form {
+            margin: 20px auto;
+            width: 300px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px;
+        }
+
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0095f6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background-color: #007bb5;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- شريط التنقل العلوي -->
+    <header class="navbar">
+        <div class="logo">
+            <h1>InstaClone</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">الصفحة الرئيسية</a></li>
+                <li><a href="#">البحث</a></li>
+                <li><a href="#">الملف الشخصي</a></li>
+                <li><a href="#" class="login-btn">تسجيل الدخول</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- نافذة تسجيل الدخول -->
+    <div class="login-form">
+        <h2>تسجيل الدخول</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="اسم المستخدم">
+            <input type="password" id="password" placeholder="كلمة المرور">
+            <button type="submit">تسجيل الدخول</button>
+        </form>
+    </div>
+
+    <!-- الشبكة الرئيسية للصور -->
+    <section class="gallery">
+        <div class="photo">
+            <img src="https://via.placeholder.com/300" alt="صورة 1">
+        </div>
+        <div class="photo">
+            <img src="https://via.placeholder.com/300" alt="صورة 2">
+        </div>
+        <div class="photo">
+            <img src="https://via.placeholder.com/300" alt="صورة 3">
+        </div>
+        <div class="photo">
+            <img src="https://via.placeholder.com/300" alt="صورة 4">
+        </div>
+        <div class="photo">
+            <img src="https://via.placeholder.com/300" alt="صورة 5">
+        </div>
+        <div class="photo">
+            <img src="https://via.placeholder.com/300" alt="صورة 6">
+        </div>
+    </section>
+
+</body>
+</html>
